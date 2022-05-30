@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        // you have to create file in root to hold the OauthToken and folderId token
+        // you have to create file in root to hold the OauthToken and folderId token or write them as a string into RequestToken and Request fields
         val requestToken = RequestToken(secret.yandexPassportOauthToken)
         val token = YaBearerToken()
         token.execute(requestToken)
