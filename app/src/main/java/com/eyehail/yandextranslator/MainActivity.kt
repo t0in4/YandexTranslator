@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         val requestToken = RequestToken(secret.yandexPassportOauthToken)
         val token = YaBearerToken()
         token.execute(requestToken)
-        val req = Request(listOf("Lovely", "Mariana"), "ru", secret.folderId)
+        val req = Request(listOf("Lovely", "Mariana"), "fr", secret.folderId)
         val task = YaTranslateTask()
         task.execute(req)
     }
